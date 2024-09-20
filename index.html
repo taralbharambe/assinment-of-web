@@ -3,74 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input Types Form</title>
+    
+    <title>Logo Showcase</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        form {
-            max-width: 400px;
-            margin: auto;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 20px;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-        }
-        input[type="submit"] {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.logo-box {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px; /* Adjust width as necessary */
+    height: 100px; /* Adjust height as necessary */
+}
+
+.logo-box img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
     </style>
 </head>
 <body>
-
-<h2>Different Input Types Form</h2>
-<form>
-    <label for="text">Text:</label>
-    <input type="text" id="text" name="text" placeholder="Enter text">
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder="Enter email">
-
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" placeholder="Enter password">
-
-    <label for="number">Number:</label>
-    <input type="number" id="number" name="number" min="1" max="100" placeholder="Enter a number">
-
-    <label for="date">Date:</label>
-    <input type="date" id="date" name="date">
-
-    <label for="time">Time:</label>
-    <input type="time" id="time" name="time">
-
-    <label for="color">Color:</label>
-    <input type="color" id="color" name="color">
-
-    <label for="url">URL:</label>
-    <input type="url" id="url" name="url" placeholder="Enter URL">
-
-    <label for="tel">Telephone:</label>
-    <input type="tel" id="tel" name="tel" placeholder="Enter telephone number">
-
-    <label for="range">Range:</label>
-    <input type="range" id="range" name="range" min="0" max="100" value="50">
-
-    <input type="submit" value="Submit">
-</form>
-
+    <div class="container">
+        <div class="logo-box">
+            <img src="bharatpe-logo.png" alt="BharatPe">
+        </div>
+        <div class="logo-box">
+            <img src="swiggy-logo.png" alt="Swiggy">
+        </div>
+        <div class="logo-box">
+            <img src="salesken-logo.png" alt="Salesken">
+        </div>
+        <div class="logo-box">
+            <img src="vyapar-logo.png" alt="Vyapar">
+        </div>
+        <div class="logo-box">
+            <img src="capgemini-logo.png" alt="Capgemini">
+        </div>
+        <div class="logo-box">
+            <img src="simplilearn-logo.png" alt="Simplilearn">
+        </div>
+    </div>
 </body>
 </html>
